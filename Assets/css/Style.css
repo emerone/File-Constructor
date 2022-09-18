@@ -1,0 +1,136 @@
+          /* Setup */
+
+*{
+  box-sizing: border-box;
+  outline: none;
+  color: #000c;
+}
+
+*::placeholder{
+  color: #0009;
+}
+
+button, select, option{
+  cursor: pointer;
+}
+
+          /* Body */
+
+body{
+  display: grid;
+  place-items: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #e3ebf0;
+}
+
+input, textarea, select, button, option{
+  background-color: #e3ebf0;
+  border: 1px solid #0001;
+  box-shadow: 0px 0px .4rem #0001;
+  resize: none;
+  padding: .4rem .8rem;
+  transition: all .2s ease ;
+} 
+
+:is(input, textarea, select, button, option):hover,
+:is(input, textarea, select, button, option):focus-within{
+  background-color: #d8e6efcc;
+}
+
+main {
+  background-color: #fffa;
+  padding: 1.2rem;
+  border: 1px solid #0001;
+  box-shadow: 0px 0px .7rem #0001;
+  border-radius: .1rem;
+  width: 40rem;
+}
+
+textarea {
+  width: 100%;
+  height: 15rem;
+  padding: 1rem 1.2rem;
+}
+
+main > div > div > div{
+  width: 100%;
+}
+
+main > div > div > div > *{
+  width: 100%;
+}
+
+main > div > div{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+main > div > button {
+  margin: 0 auto;
+  display: block;
+}
+          
+          /* Animation */
+
+@keyframes name {
+  0%{
+  }
+  100%{
+  }
+}
+
+          /* Responsive */
+
+@media screen and (min-width:calc(1920px * calc(1 + 1/2) - 100px)) {
+  html{
+    font-size: calc(16px * calc(1 + 1/2));
+  }
+}
+
+@media screen and (min-width:calc(1920px * calc(1 + 1/3) - 200px)) {
+  html{
+    font-size: calc(16px * calc(1 + 1/3));
+  }
+}
+
+@media screen and (min-width:calc(1920px * calc(1 + 1/1) - 300px)) {
+  html{
+    font-size: calc(16px * calc(1 + 1/1));
+  }
+}
+
+@media screen and (min-width:calc(1920px * calc(1 + 2/1) - 400px)) {
+  html{
+    font-size: calc(16px * calc(1 + 2/1));
+  }
+}
+
+@media screen and (min-width:calc(1920px * calc(1 + 3/1) - 500px)) {
+  html{
+    font-size: calc(16px * calc(1 + 3/1));
+  }
+}
+
+          /* Custom-Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+  width: .625rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
