@@ -35,7 +35,7 @@ input, textarea, select, button, option{
 
 :is(input, textarea, select, button, option):hover,
 :is(input, textarea, select, button, option):focus-within{
-  background-color: #d8e6efcc;
+  background-color: #d8e6ef;
 }
 
 main {
