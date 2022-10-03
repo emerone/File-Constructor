@@ -38,7 +38,7 @@ input, textarea, select, button, option{
   background-color: #d8e6ef;
 }
 
-main {
+form {
   background-color: #fffa;
   padding: 1.2rem;
   border: 1px solid #0001;
@@ -53,23 +53,29 @@ textarea {
   padding: 1rem 1.2rem;
 }
 
-main > div > div > div{
+form > div > div > div{
   width: 100%;
 }
 
-main > div > div > div > *{
+form > div > div > div > *{
   width: 100%;
 }
 
-main > div > div{
+form > div > div{
   display: flex;
   gap: 1rem;
   margin-bottom: 1rem;
 }
 
-main > div > button {
+button {
   margin: 0 auto;
   display: block;
+  opacity: .7;
+  transition: all .3s ease;
+}
+
+html:has(form:valid) button{
+  opacity: 1;
 }
           
           /* Animation */
