@@ -4,7 +4,7 @@ const inpNameFile = document.querySelector('input')
 const btnSave = document.querySelector('button')
 
 btnSave.addEventListener("click", () => {
-    if(textArea.value && inpNameFile.value != ""){
+    if(textArea.value && inpNameFile.value){
         const blob = new Blob([textArea.value], {type: btnFileExt.value})
 
         const fileUrl = URL.createObjectURL(blob)
