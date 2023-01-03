@@ -1,6 +1,4 @@
-# Project-github
-
-Simple file constructor in JS
+# File-Constructor
 
 ## Description
 
