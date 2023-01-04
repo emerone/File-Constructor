@@ -1,8 +1,6 @@
 # File-Constructor
 
-## Description
-
-File constructor using blob to make the file. Form with 2 input and 1 option to select in order to choose the type of file.
+File constructor in JS using blob to make the file. Form with 2 input and 1 option to select in order to choose the type of file.
 
 ## Getting Started
 
